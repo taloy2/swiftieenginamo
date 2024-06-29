@@ -1,0 +1,326 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: transparent;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.nav{
+    text-align:center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: violet;
+    font-size: 20px;
+}
+
+nav li {
+   display: inline;
+   margin-right: 30px;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: violet;
+   font-weight:100;
+    transition: color 0.3s;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+nav a:hover {
+    color: white;
+}
+.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: seagreen; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.6s; 
+}
+
+.nav a:hover::after {
+    width: 100%;
+    font-weight:500;
+}
+
+.pic {
+    height: 500px;
+}
+
+main {
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.project {
+    margin-bottom: 20px;
+   
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
+.body{
+    background-image: url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    color: violet;
+}
+.container h2{
+    color: white;
+    font-family: 'Tangerine';
+}
+.container p{
+    color: white;
+}
+.container h1{
+    font-size: 180px;
+    font-family: 'Tangerine';
+    color: violet;
+    height: fit-content;
+    text-align: center;
+}
+.container h5{
+    color: white;
+    font-size: xx-large;
+  font-family: 'Quicksand', sans-serif;
+}
+.container h3{
+    color: white;
+    font-family: 'Tangerine';
+    font-size: 50px;
+}
+.img{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.nav{
+    height: 0%;
+}
+.tv{
+    float: right;
+}
+
+.person-card {
+    transition: transform 0.3s;
+}
+.person-card p{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: gray;
+    transition: transform 0.3s;
+}
+.person-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.person-card img {
+    width: 20%;
+    border-bottom: 1px solid #ddd;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.person-card h5,
+.person-card p {
+    margin: 10px;
+}
+
+.person-card a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.person-card a:hover {
+    text-decoration: underline;
+}
+.resume {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+.resume:hover {
+    transform: scale(1.05);
+}
+#resume-content {
+    text-align: left;
+}
+#resume-content h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+#resume-content p {
+    margin: 5px 0;
+    color: white;
+}
+#resume-content h3 {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 15px;
+}
+#resume-content p {
+    margin: 5px 0;
+}
+#resume-content > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+.contact form {
+    display: grid;
+    gap: 15px;
+}
+.project {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 100px;
+    background-color: violet;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
+}
+.project:hover {
+    transform: scale(1.05); 
+}
+.project h2 {
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+}
+.project a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+}
+.project a:hover {
+    text-decoration: underline;
+}
+.project div {
+    margin-bottom: 10px;
+}
+.project h4{
+text-align: center;
+}
+.project h2{
+    color: black;
+}
+.repo {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: violet;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+}
+.repo h2 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+}
+.pro {
+    margin: 15px 0;
+}
+.pro a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+.pro a:hover {
+    text-decoration: underline;
+}
+.repo div {
+    margin-bottom: 10px;
+}

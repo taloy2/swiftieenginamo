@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300;400&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <audio controls autoplay style="display: none;">
+        <source src="Enchanted__Taylor_s_Version_.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <header>
+        <div class="container">
+            <br><br>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#" onclick="navigateTo('projects')">Projects</a></li>
+                    <li><a href="#" onclick="navigateTo('repositories')">Repositories</a></li>
+                    <li><a href="#" onclick="navigateTo('about')">About Me</a></li>
+                    <li><a href="#" onclick="navigateTo('resume')">Resume</a></li>
+                    <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home" class="container">
+        <h1 id="typing-text">Speak Now! <span><h5>Taloy's Version</h5></span></h1>
+    </main>
+
+    <main id="about" class="container">
+        <section class="person-card">
+            <img src="re.jpg" alt="Rey" class="img">
+            <h5>Rey Sinabianan</h5>
+            <p>balag bugo basta maro</p>
+            <p>ID No. 20212010</p>
+            <p>Github:<a href="https://github.com/taloy2">Taloy</a></p>
+        </section>
+    </main>
+
+    <main id="projects" class="project" style="display: none;">
+        <h2>Projects</h2>
+        <h4>click the link</h4>
+        <br><br>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Array">Array</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/BankAcoount">BankAccount</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Color">Color</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Employee">Employee</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Encapsulation">Encapsulation</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Inheritance">Inheritance</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Lamp">Lamp</a></h3>
+        </div>
+        <div class="project">
+            <h3><a
+                    href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Person">Person</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Polymorphism">Polymorphism</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/Sorting">Sorting</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/projects">Projects</a>
+            </h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS/tree/main/src/students">students</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/taloy2/bubblesort">Bubblesort</a></h3>
+        </div>
+    </main>
+    <main id="resume" class="resume">
+        <div id="resume-content">
+            <h3>Rey Sinabianan</h3>
+            <p>Address: Zone-4, Kisolon Sumilao Bukidnon</p>
+            <p>Email: sinabiananrey@gmail.com</p>
+            <p>Phone: +639195730638</p>
+
+            <h3>Education</h3>
+            <p>BSIT, Northern Bukidon State College, 2nd Year</p>
+
+            <h3>Experience</h3>
+            <p>still learning</p>
+
+            <h3>Skills</h3>
+            <p></p>
+
+
+        </div>
+    </main>
+    <main id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <main id="repositories" class="repo">
+        <div class="repo">
+            <h2>Repositories</h2>
+        </div>
+
+        <br><br>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/IT21C-PROJECTS">Projects</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/Inheritance">Inheritance</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/bankaccount">Bank Account</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/assessment">Assessment</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/it24c-branches">Branches</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/web">Web</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/bubblesort">Bubblesort</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/spa-jquery">Single Page Application</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/it24-main">Main(forked)</a></h3>
+        </div>
+
+        <div class="pro">
+            <h3><a href="https://github.com/taloy2/lab1">Linkedlist</a></h3>
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sinabianan. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
